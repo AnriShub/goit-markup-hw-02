@@ -1,0 +1,119 @@
+:root {
+    --textcolor: #212121;
+    --secondarycolor: #757575;
+    --maincolor: #2196F3;
+    --bgcolor: #ffffff;
+  }
+
+header {
+
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+}
+
+p {
+    font-family: Roboto;
+}
+
+nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    color: var(--textcolor);
+}
+
+a {
+    color: var(--textcolor);
+}
+
+a:focus {
+    color: var(--maincolor);
+}
+
+a:hover {
+    color: var(--maincolor);
+}
+
+/* <!-- <h2>Детлі</h2> --> */
+.details {
+    background-color: var(--bgcolor);
+}
+button {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+    border-width: 0px;
+    border-style:none;
+    border-color: buttonborder;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+}
+
+button:hover {
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+}
+
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    text-transform: uppercase;
+    color: var(--textcolor);
+}
+
+.details-items-body {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--secondarycolor);
+}
+
+/* section Наша команда */
+h2 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.jobtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondarycolor);
+} */
+
+
+
+
+
+.portfolio {
+    
+}
+h5 {
+    font-family: 'Roboto';
+}
