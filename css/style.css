@@ -1,6 +1,7 @@
 :root {
     --textcolor: #212121;
     --secondarycolor: #757575;
+    --button-color: #F5F4FA;
     --maincolor: #2196F3;
     --bgcolor: #ffffff;
   }
@@ -11,11 +12,38 @@ header {
 
 body {
     font-family: Roboto, sans-serif;
-    color: #212121;
+    color: var(--textcolor);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--bgcolor);
+
 }
+
+.web-studio-logo {
+    color: var(--textcolor);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.web-studio-logo:hover {
+    color: var(--textcolor);
+}
+
 
 p {
     font-family: Roboto;
+}
+
+.portfolio_color {
+    color: var(--maincolor);
+}
+
+.studio_color {
+    color: var(--maincolor);
+}
+
+ul {
+    list-style-type: none;
 }
 
 nav {
@@ -25,8 +53,10 @@ nav {
     color: var(--textcolor);
 }
 
+
 a {
     color: var(--textcolor);
+    text-decoration: none;
 }
 
 a:focus {
@@ -42,8 +72,10 @@ a:hover {
     background-color: var(--bgcolor);
 }
 button {
-    background-color: var(--secondarycolor);
-    color: var(--bgcolor);
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--button-color);
+    color: var(--textcolor);
     border-width: 0px;
     border-style:none;
     border-color: buttonborder;
@@ -60,19 +92,38 @@ button:hover {
     color: var(--bgcolor);
 }
 
+.btn-studio {
+    width: 216px;
+    height: 50px;
+    background-color: var(--maincolor);
+    color: var(--bgcolor);
+}
+
+h1 {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bgcolor);
+}
 
 h3 {
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.42;
-    text-transform: uppercase;
+    font-size: 16px;
+    /* text-transform: uppercase; */
     color: var(--textcolor);
+}
+
+.position {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--secondarycolor);
 }
 
 .details-items-body {
     font-family: Roboto;
-    font-weight: 400;
     font-size: 14px;
     line-height: 2;
     color: var(--secondarycolor);
@@ -86,6 +137,18 @@ h2 {
     line-height: 1.17;
 }
 
+.example-work {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.example-descr {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondarycolor);
+}
+
 h4 {
     font-family: 'Roboto';
     font-weight: 500;
@@ -93,9 +156,13 @@ h4 {
     line-height: 1.19;
 }
 
+.details-descr {
+    line-height: 24px;
+    color: var(--secondarycolor);
+}
+
 .jobtitle {
     font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 }
