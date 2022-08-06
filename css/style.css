@@ -4,11 +4,8 @@
     --button-color: #F5F4FA;
     --maincolor: #2196F3;
     --bgcolor: #ffffff;
+    --transp-white: #ffffffae;
   }
-
-header {
-
-}
 
 body {
     font-family: Roboto, sans-serif;
@@ -20,6 +17,7 @@ body {
 }
 
 .web-studio-logo {
+    font-family: Raleway;
     color: var(--textcolor);
     font-size: 26px;
     font-weight: 700;
@@ -29,10 +27,28 @@ body {
     color: var(--textcolor);
 }
 
-
-p {
-    font-family: Roboto;
+.web-studio-logo:focus {
+    color: var(--textcolor);
 }
+
+.mail {
+    font-weight: 500;
+    color: var(--secondarycolor);
+}
+
+.tel {
+    font-weight: 500;
+    color: var(--secondarycolor);
+}
+
+.tel .mail :hover {
+    color: var(--maincolor);
+}
+
+.tel .mail :focus {
+    color: var(--maincolor);
+}
+
 
 .portfolio_color {
     color: var(--maincolor);
@@ -46,7 +62,7 @@ ul {
     list-style-type: none;
 }
 
-nav {
+.list {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42;
@@ -67,11 +83,11 @@ a:hover {
     color: var(--maincolor);
 }
 
-/* <!-- <h2>Детлі</h2> --> */
-.details {
-    background-color: var(--bgcolor);
-}
-button {
+
+.btn-portfolio {
+    font-family: 'Roboto';
+    line-height: 26px;
+    letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 16px;
     background-color: var(--button-color);
@@ -82,24 +98,44 @@ button {
     cursor: pointer;
 }
 
-button:focus {
+.btn-portfolio:focus {
     background-color: var(--maincolor);
     color: var(--bgcolor);
 }
 
-button:hover {
+.btn-portfolio:hover {
     background-color: var(--maincolor);
     color: var(--bgcolor);
 }
 
 .btn-studio {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,9;
     width: 216px;
     height: 50px;
     background-color: var(--maincolor);
     color: var(--bgcolor);
+    border-color: buttonborder;
+    border-width: 0px;
+    border-style: none;
 }
 
-h1 {
+.btn-studio:focus {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.btn-studio:hover {
+    background-color: var(--secondarycolor);
+    color: var(--bgcolor);
+}
+
+.studio-title {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -109,17 +145,15 @@ h1 {
     color: var(--bgcolor);
 }
 
-h3 {
-    font-weight: 700;
-    font-size: 16px;
-    /* text-transform: uppercase; */
-    color: var(--textcolor);
-}
 
-.position {
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--secondarycolor);
+.details {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--textcolor);
 }
 
 .details-items-body {
@@ -129,12 +163,30 @@ h3 {
     color: var(--secondarycolor);
 }
 
+.name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: var(--textcolor);
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1,19;
+    color: var(--secondarycolor);
+}
+
 /* section Наша команда */
-h2 {
+.teams-jobs {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--textcolor);
 }
 
 .example-work {
@@ -145,15 +197,8 @@ h2 {
 
 .example-descr {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,9px;
     color: var(--secondarycolor);
-}
-
-h4 {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
 }
 
 .details-descr {
@@ -165,6 +210,10 @@ h4 {
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.19;
+}
+
+.footer-info-color {
+    color: var(--transp-white);
 }
 
 /* section p {
